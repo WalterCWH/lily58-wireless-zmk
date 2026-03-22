@@ -19,18 +19,18 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: nice_nano//zmk
     shield: lily58_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: lily58_dongle
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: lily58_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: lily58_left
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: lily58_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: lily58_right
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: settings_reset
